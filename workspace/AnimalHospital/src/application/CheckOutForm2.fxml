@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CheckOutController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="362.0" prefWidth="467.0">
+         <children>
+            <Text layoutX="36.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. What is your name?" wrappingWidth="224.13671875" />
+            <Text layoutX="20.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-Out" wrappingWidth="332.49609375">
+               <font>
+                  <Font name="Cabin-Regular" size="32.0" />
+               </font>
+            </Text>
+            <Text layoutX="36.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. What is your pet's name?" wrappingWidth="224.13671875" />
+            <TextField fx:id="outOwnerName" layoutX="47.0" layoutY="87.0" promptText="name" />
+            <TextField fx:id="outPetName" layoutX="48.0" layoutY="155.0" promptText="pet's name" />
+            <Button fx:id="outSubmit" layoutX="36.0" layoutY="204.0" mnemonicParsing="false" onAction="#outFormSubmit" text="SUBMIT" />
+            <Button fx:id="backButton" layoutX="379.0" layoutY="21.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

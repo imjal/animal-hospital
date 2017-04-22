@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="378.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageController">
+   <children>
+      <Button fx:id="checkInButton" layoutX="363.0" layoutY="97.0" mnemonicParsing="false" onAction="#checkInPet" onMouseClicked="#checkInPet" prefHeight="25.0" prefWidth="94.0" text="Check-in Pet" />
+      <Button fx:id="checkOutButton" layoutX="363.0" layoutY="143.0" mnemonicParsing="false" onAction="#checkOutPet" onMouseClicked="#checkOutPet" text="See Your Pets" />
+      <Button fx:id="seePetsButton" layoutX="363.0" layoutY="189.0" mnemonicParsing="false" onAction="#viewPets" onMouseClicked="#viewPets" prefHeight="25.0" prefWidth="94.0" text="See All Pets" />
+      <Text layoutX="64.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ram &amp; Jessica's Animal Hospital">
+         <font>
+            <Font name="Cabin-Regular" size="27.0" />
+         </font>
+      </Text>
+      <WebView fx:id="mediaView" layoutX="33.0" layoutY="89.0" prefHeight="200.0" prefWidth="315.0" />
+   </children>
+</AnchorPane>

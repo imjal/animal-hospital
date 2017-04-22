@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.FXCollections ?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CheckInController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="567.0" prefWidth="467.0">
+         <children>
+            <Text layoutX="36.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. What is your name?" wrappingWidth="224.13671875" />
+            <Text layoutX="20.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-in" wrappingWidth="332.49609375">
+               <font>
+                  <Font name="Cabin-Regular" size="32.0" />
+               </font>
+            </Text>
+            <Text layoutX="36.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. What is your email?" wrappingWidth="224.13671875" />
+            <Text layoutX="36.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. What is your pet's name?" wrappingWidth="224.13671875" />
+            <Text layoutX="36.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. What type of pet is it?" wrappingWidth="224.13671875" />
+            <Text layoutX="36.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. What color is your pet? " wrappingWidth="224.13671875" />
+            <Text layoutX="36.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. What gender is your pet?" wrappingWidth="224.13671875" />
+            <Text layoutX="36.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. What day will you pick up your pet?" wrappingWidth="224.13671875" />
+            <TextField fx:id="inOwnerName" layoutX="47.0" layoutY="87.0" promptText="name" />
+            <TextField fx:id="inOwnerEmail" layoutX="47.0" layoutY="150.0" promptText="email" />
+            <TextField fx:id="inPetName" layoutX="47.0" layoutY="211.0" promptText="pet's name" />
+            <TextField fx:id="inPetColor" layoutX="48.0" layoutY="346.0" promptText="color" />
+
+            <ComboBox fx:id="inChoicePet" layoutX="47.0" layoutY="279.0" prefWidth="150.0" promptText="choose">
+      			<items>
+        			<FXCollections fx:factory="observableArrayList">
+			          <String fx:value="Cat" />
+			          <String fx:value="Dog" />
+			          <String fx:value="Bird" />
+        			</FXCollections>
+      			</items>
+    		</ComboBox>
+            <TextField fx:id="inPetGender" layoutX="48.0" layoutY="403.0" promptText="gender" />
+            <DatePicker fx:id="inBoardEndDatePicker" layoutX="48.0" layoutY="460.0" />
+            <Button fx:id="inSubmit" layoutX="36.0" layoutY="510.0" mnemonicParsing="false" onAction="#inFormSubmit" text="SUBMIT" />
+            <Button fx:id="backButton" layoutX="392.0" layoutY="21.0" mnemonicParsing="false" onAction="#goBack" onMouseClicked="#goBack" text="Back" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
