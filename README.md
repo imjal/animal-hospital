@@ -1,7 +1,4 @@
-"# imsaGWC" 
-# lost-found
-# lost-found
-# lost-found
-# lost-found
-# lostfound-proj
-# lostfound-proj
+# Animal Hospital 
+by Jessica Lee and Ram Koganti 
+
+To demonstrate our understanding of object orientated programming and exploration of GUI. 
